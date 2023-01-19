@@ -77,7 +77,7 @@ class OpenTitan(object):
         # Unfortunately, this doesn't seem to work for the CW310 yet,
         # see https://github.com/lowRISC/ot-sca/issues/48.
         # TODO: We should have this in the CLI.
-        force_programming = False
+        force_programming = True
         print('Connecting and loading FPGA... ', end='')
 
         # Runtime patch fpga.fpga.FPGAProgram to detect if it was actually called.
